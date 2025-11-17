@@ -6,14 +6,19 @@ img {
 body {
     
     font-family: 'Arial';
-    background: rgb(22, 41, 95);
+    background: rgb(6, 16, 42);
     color: rgb(255, 255, 255);
   }
 
   h1 {
     font-size:xx-large;
     font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    color: rgb(203, 129, 95);
+    color: rgb(180, 130, 31);
+  }
+  h2 {
+    font-size:x-large;
+    font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    color: rgb(213, 224, 240);
   }
 
   .tablink {
