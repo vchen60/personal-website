@@ -5,12 +5,12 @@ img {
 body {
     text-align: center;
     font-family: 'Arial';
-    background: rgb(63, 100, 201);
-    color: purple;
+    background: rgb(22, 41, 95);
+    color: rgb(255, 255, 255);
   }
 
   h1 {
     text-align: center;
-    font-family: 'Georgia';
-    color: rgb(92, 35, 9);
+    font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    color: rgb(203, 129, 95);
   }
