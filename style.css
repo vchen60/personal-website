@@ -1,0 +1,16 @@
+img {
+    width: 200px;
+  }
+
+body {
+    text-align: center;
+    font-family: 'Arial';
+    background: rgb(63, 100, 201);
+    color: purple;
+  }
+
+  h1 {
+    text-align: center;
+    font-family: 'Georgia';
+    color: rgb(92, 35, 9);
+  }
