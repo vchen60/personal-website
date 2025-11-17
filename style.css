@@ -3,14 +3,45 @@ img {
   }
 
 body {
-    text-align: center;
+    
     font-family: 'Arial';
     background: rgb(22, 41, 95);
     color: rgb(255, 255, 255);
   }
 
   h1 {
-    text-align: center;
+    font-size:xx-large;
     font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     color: rgb(203, 129, 95);
   }
+
+  .tablink {
+    background-color: #555;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 25%;
+  }
+  
+  /* Change background color of buttons on hover */
+  .tablink:hover {
+    background-color: #777;
+  }
+  
+  /* Set default styles for tab content */
+  .tabcontent {
+    color: white;
+    display: none;
+    padding: 50px;
+    text-align: center;
+  }
+  
+  /* Style each tab content individually */
+  #London {background-color:red;}
+  #Paris {background-color:green;}
+  #Tokyo {background-color:blue;}
+  #Oslo {background-color:orange;}
