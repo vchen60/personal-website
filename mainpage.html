@@ -9,6 +9,7 @@
 <script src=""></script>
 <body>
 
+  
 <div id="Currents" class="tabcontent">
     <h2>Current Projects</h2>
     <p>Some current projects!</p>
@@ -35,14 +36,16 @@
     </p>
   </div>
   
- 
-  <button class="tablink" onclick="openCity('Tokyo', this, 'rgb(94, 118, 171)')"id="defaultOpen">About/Homepage</button>
-  <button class="tablink" onclick="openCity('Currents', this, 'rgb(94, 118, 171)')">Current Projects</button>
-  <button class="tablink" onclick="openCity('Resume', this, 'rgb(94, 118, 171)')">Resume/CV</button>
-  <button class="tablink" onclick="openCity('Oslo', this, 'rgb(94, 118, 171)')">Links of Inspiration</button>
-  <button class="tablink" onclick="openCity('Paris', this, 'rgb(94, 118, 171)')">Contacts</button>
- 
-  
+  <header>
+    <p><b>TEST</b></p>
+  </header>
+  <div class="tabs">
+  <button class="tablink" onclick="openCity('Tokyo', 'mainpage.html', this, 'rgb(94, 118, 171)')"id="defaultOpen">About/Homepage</button>
+  <button class="tablink" onclick="openCity('Tokyo', 'projects.html', this, 'rgb(94, 118, 171)')">Current Projects</button>
+  <button class="tablink" onclick="openCity('Tokyo', 'projects.html', this, 'rgb(94, 118, 171)')">Resume/CV</button>
+  <button class="tablink" onclick="openCity('Tokyo', 'projects.html', this, 'rgb(94, 118, 171)')">Links of Inspiration</button>
+  <button class="tablink" onclick="openCity('Tokyo', 'projects.html', this, 'rgb(94, 118, 171)')">Contacts</button>
+  </div> 
   <p><br></p>
 <h1> 🌌 WELCOME!! 🌌</h1>
   <h2>Hello! I'm Vincent Chen.</h2>
@@ -83,7 +86,11 @@
     <script>
 
 
-function openCity(cityName, elmnt, color) {
+function openCity(cityName, newL, elmnt, color) {
+  if (newL) {
+    window.location.href = newL;
+    return; 
+  }
   // Hide all elements with class="tabcontent" by default */
   var i, tabcontent, tablinks;
   tabcontent = document.getElementsByClassName("tabcontent");
@@ -105,7 +112,7 @@ function openCity(cityName, elmnt, color) {
 }
 
 // Get the element with id="defaultOpen" and click on it
-document.getElementById("defaultOpen").click();
+//document.getElementById("defaultOpen").click();
     </script>
 </body>
 </html>

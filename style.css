@@ -10,6 +10,13 @@ body {
     color: rgb(255, 255, 255);
   }
 
+  header {
+    text-align: center;
+    font-size:xx-large;
+    font-family: 'Courier New';
+    background: rgb(145, 222, 145);
+  }
+
   h1 {
     text-align: center;
     font-size:xx-large;
