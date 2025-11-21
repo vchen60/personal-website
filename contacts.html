@@ -5,41 +5,33 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <link rel="stylesheet" href="style.css">
 <style>
+      .card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px; /* 5px rounded corners */
+  }
+  
+  /* Add rounded corners to the top left and the top right corner of the image */
+  img {
+    border-radius: 5px 5px 0 0;
+  }
+  
+  /* On mouse-over, add a deeper shadow */
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(188, 25, 25, 0.2);
+  }
+  
+  /* Add some padding inside the card container */
+  .container {
+    padding: 2px 16px;
+  }
 </style>
 <script src=""></script>
 <body>
-
-  
-<div id="Currents" class="tabcontent">
-    <h2>Current Projects</h2>
-    <p>Some current projects!</p>
-  </div>
-  
-  <div id="Paris" class="tabcontent">
-    <h2>Contacts</h2>
-    <p>Reach out to me!</p>
-  </div>
-  
-  <div id="Tokyo" class="tabcontent">
-    <h2>Tokyo</h2>
-    <p>Tokyo is the capital of Japan.</p>
-  </div>
-  
-  <div id="Oslo" class="tabcontent"> <h2>Oslo</h2> <p>Oslo is the capital of Norway.</p> </div>
-
-  <div id="Resume" class="tabcontent">
-    <h2>Resume</h2>
-    <p>
-      <a href="https://drive.google.com/file/d/1p7kVyP4oZ3a_vD2s7X5DYAzP1Ja3JY56/view?usp=sharing" target="_blank">
-        My Resume/CV
-      </a>
-    </p>
-  </div>
-  
   <header>
-    <h11><b>Homepage</b></h11>
-    <h2>(Who am I?)</h2>
-    <h3>Welcome!!</h3>
+    <h11><b>Current Projects!</b></h11>
+    <h2>Some current & past projects!</h2>
+    <h3>Chemistry, CS, Math, etc.</h3>
   </header>
   <div class="tabs">
   <button class="tablink" onclick="openCity('Tokyo', 'mainpage.html', this, 'rgb(94, 118, 171)')"id="defaultOpen">About/Homepage</button>
@@ -47,18 +39,21 @@
   <button class="tablink" onclick="openCity('Tokyo', 'resume.html', this, 'rgb(94, 118, 171)')">Resume/CV</button>
   <button class="tablink" onclick="openCity('Tokyo', 'links.html', this, 'rgb(94, 118, 171)')">Links of Inspiration</button>
   <button class="tablink" onclick="openCity('Tokyo', 'contacts.html', this, 'rgb(94, 118, 171)')">Contacts</button>
-  </div> 
-  <p><br></p>
-<h1> 🌌 WELCOME!! 🌌</h1>
-  <h2>Hello! I'm Vincent Chen.</h2>
-    <p>I'm a current senior at <b>Stuyvesant High School</b> interested in chemical engineering and computation, and I'm from South Brooklyn.</p>
-    <p>At Stuy, you'll usually find me either at <b>Stuy ACS Chemistry</b> (Fri, room 902) or the <b>csDojo</b> (Mon-Thurs, room 307). If so, please say hi! (I promise I don't bite).
-        </p>
-        <p>
-        Alongside my school life, I'm also currently an intern at the NYC Department of Parks and Recreation, as well as a reseach 
-        intern at Rutgers University Newark. 
-    </p>
-    <pre>⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+</div>
+    <h1>
+        Contacts
+    </h1>
+    <h2>Feel free to reach out!
+    </h2>
+
+    <h3>Email:</h3>
+        <p>chen.vincent.ny@gmail.com</p>
+    <h3>Github:</h3><a href="https://github.com/vchen60">https://github.com/vchen60</a>
+    <h3>LinkedIn:</h3>
+    <a href="https://www.linkedin.com/in/vincent-chen-ny/">https://www.linkedin.com/in/vincent-chen-ny/</a>
+
+
+      <pre>⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
         ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡄⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
         ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
         ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡜⣇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
@@ -84,38 +79,8 @@
         ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
         ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</pre>
 
-    <p><b>Current song on repeat:</b> <i>Fame is a Gun, Addison Rae</i></p>
-    <p><b>Currently reading:</b> <i>To the Lighthouse, Virginia Woolf</i> </p>
-    <script>
+      <script>
 
-
-function openCity(cityName, newL, elmnt, color) {
-  if (newL) {
-    window.location.href = newL;
-    return; 
-  }
-  // Hide all elements with class="tabcontent" by default */
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
-  }
-
-  // Remove the background color of all tablinks/buttons
-  tablinks = document.getElementsByClassName("tablink");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].style.backgroundColor = "";
-  }
-
-  // Show the specific tab content
-  document.getElementById(cityName).style.display = "block";
-
-  // Add the specific color to the button used to open the tab content
-  elmnt.style.backgroundColor = color;
-}
-
-// Get the element with id="defaultOpen" and click on it
-//document.getElementById("defaultOpen").click();
-    </script>
+      </script>
 </body>
 </html>
