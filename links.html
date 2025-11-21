@@ -29,9 +29,9 @@
 <script src=""></script>
 <body>
   <header>
-    <h11><b>Current Projects!</b></h11>
-    <h2>Some current & past projects!</h2>
-    <h3>Chemistry, CS, Math, etc.</h3>
+    <h11><b>Links of Inspiration!</b></h11>
+    <h2>Cool things you should know more about</h2>
+    <h3>(alligatorz)</h3>
   </header>
   <div class="tabs">
   <button class="tablink" onclick="openCity('Tokyo', 'mainpage.html', this, 'rgb(94, 118, 171)')"id="defaultOpen">About/Homepage</button>
@@ -74,6 +74,31 @@
         ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀</pre>
 
       <script>
+
+function openCity(cityName, newL, elmnt, color) {
+  if (newL) {
+    window.location.href = newL;
+    return; 
+  }
+  // Hide all elements with class="tabcontent" by default */
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  // Remove the background color of all tablinks/buttons
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+
+  // Show the specific tab content
+  document.getElementById(cityName).style.display = "block";
+
+  // Add the specific color to the button used to open the tab content
+  elmnt.style.backgroundColor = color;
+}
 
       </script>
 </body>
