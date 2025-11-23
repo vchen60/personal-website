@@ -3,11 +3,23 @@ img {
   }
 
   
-body {
+  :root {
+    --body-bg: rgb(6, 16, 42);
+    --body-text: rgb(255, 255, 255);
     
-    font-family: 'Arial';
-    background: rgb(6, 16, 42);
-    color: rgb(255, 255, 255);
+  }
+  
+  [data-theme="dark"] {
+    /*this is p bad but this is light mode NOT dark...*/
+    --body-bg: rgb(167, 191, 230);
+    --body-text: rgb(6,16,42);
+  }
+  
+  body {
+    font-family: Arial;
+    background: var(--body-bg);
+    color: var(--body-text);
+    margin: 0;
   }
 
   header {
@@ -96,7 +108,7 @@ body {
   
 
 .card {
-  background-color: #653fdf;
+  background-color: #4644b8;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(54, 92, 182, 0.2);
   overflow: hidden;

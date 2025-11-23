@@ -145,6 +145,17 @@ function openCity(cityName, newL, elmnt, color) {
   elmnt.style.backgroundColor = color;
 }
 
+const btn = document.getElementById("themeToggle");
+
+btn.addEventListener("click", () => {
+  const theme = document.documentElement.getAttribute("data-theme");
+  if (theme === "dark") {
+    document.documentElement.removeAttribute("data-theme");
+  } else {
+    document.documentElement.setAttribute("data-theme", "dark");
+  }
+});
+
       </script>
 </body>
 </html>
