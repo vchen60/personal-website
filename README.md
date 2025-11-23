@@ -5,8 +5,8 @@ New personal website! Do please reach out to me via email!! chen.vincent.ny@gmai
 (i don't bite i swear)
 
 ## More Features TBD:
-- adding/fixing project links
-- fix homepage 
+- adding/fixing project links / make project cards interactive
+- fix homepage, add more fun facts
 - add interactive components (save my attention span)
 - revising resume (hopefully there's more soon, LOL)
 - and hopefully more on the way!
