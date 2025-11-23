@@ -11,6 +11,7 @@ body {
   }
 
   header {
+    position: relative;  
     text-align: center;
     font-size:large;
     width: 100%;
@@ -19,6 +20,19 @@ body {
     color: rgb(213, 224, 240);
     background: rgb(80, 141, 212);
   }
+  #themeToggle {
+    position: absolute;
+    top: 15px;       /* distance from top */
+    right: 20px;     /* distance from right */
+    padding: 6px 12px;
+    background: rgba(255,255,255,0.25);
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    color: var(--text);
+    font-size: 14px;
+  }
+  
 
   h11 {
     text-align: center;
@@ -43,6 +57,9 @@ body {
     color: rgb(213, 224, 240);
   }
 
+  button {
+    box-shadow:0 8px 16px 0 rgba(3, 63, 89, 0.6)
+  }
   .tablink {
     background-color: #3b6b93;
     color: white;
