@@ -7,12 +7,18 @@ img {
     --body-bg: rgb(6, 16, 42);
     --body-text: rgb(255, 255, 255);
     
+    --h1-color: rgb(180, 130, 31);
+  --h2-color: rgb(213, 224, 240);
+  --h3-color: rgb(213, 224, 240);
   }
-  
+
   [data-theme="dark"] {
     /*this is p bad but this is light mode NOT dark...*/
     --body-bg: rgb(167, 191, 230);
     --body-text: rgb(6,16,42);
+    --h1-color: rgb(180, 130, 31);
+    --h2-color: rgb(30, 50, 80);
+    --h3-color: rgb(18, 34, 81);
   }
   
   body {
@@ -23,7 +29,7 @@ img {
     **margin-top: 0px;
     margin-left: 30px;
     margin-right: 30px;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
     padding-top: 0px;**
   }
 
@@ -49,6 +55,18 @@ img {
     color: var(--text);
     font-size: 14px;
   }
+
+  a:link {
+    color: (var(--h2-color));
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: var(--h2-color);
+    background-color: transparent;
+    text-decoration: none;
+  }
   
 
   h11 {
@@ -62,16 +80,16 @@ img {
     text-align: center;
     font-size:xx-large;
     font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    color: rgb(180, 130, 31);
+    color: var(--h1-color);
   }
   h2 {
     font-size:x-large;
     font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    color: rgb(213, 224, 240);
+    color: var(--h2-color);
   }h3{
     font-size:large;
     font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    color: rgb(213, 224, 240);
+    color: var(--h3-color);
   }
 
   button {
